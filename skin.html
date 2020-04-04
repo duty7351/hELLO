@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+  <head>
+    <title>[##_page_title_##]</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width">
+    <link rel="alternate" type="application/rss+xml" title="[##_title_##]" href="[##_rss_url_##]">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/xcode.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/load-awesome@1.1.0/css/line-scale.min.css">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+
+  <body id="[##_body_id_##]">
+    <div id="loader">
+      <div class="la-line-scale uk-position-center">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <s_t3>
+      <div id="__tidory">
+        <div id="container">
+          <nav class="uk-navbar-container uk-navbar-transparent" id="nav" role="navigation" uk-sticky="animation: uk-animation-slide-top; cls-active: sticky; cls-inactive: uk-navbar-transparent; top: 200" uk-navbar>
+            <div class="uk-navbar-left" id="s1"><a href="#" uk-toggle="target: #sidebar1">
+                <div></div>
+                <div></div>
+                <div></div>
+              </a></div>
+            <div class="uk-navbar-center" id="metainfo"></div>
+            <div class="uk-navbar-right" id="s2"><a href="#" uk-toggle="target: #sidebar2"><img class="profile" src="[##_image_##]"></a></div>
+            <div id="sidebar1" uk-modal>
+              <aside class="uk-modal-dialog" role="sidebar"><a class="uk-modal-close" href="#" uk-close></a>
+                <s_sidebar>
+                  <s_sidebar_element>
+                    <!-- 검색 -->
+                    <div class="uk-search" id="search">
+                      <s_search><span uk-search-icon></span><input class="uk-search-input" type="text" name="[##_search_name_##]" value="[##_search_text_##]" onkeypress="if (event.keyCode == 13) { [##_search_onclick_submit_##] }"></s_search>
+                    </div>
+                  </s_sidebar_element>
+                  <s_sidebar_element>
+                    <!-- 카테고리 -->
+                    <div id="category">[##_category_list_##]</div>
+                  </s_sidebar_element>
+                  <s_sidebar_element>
+                    <!-- 블로그 메뉴 -->
+                    <div id="menu">[##_blog_menu_##]</div>
+                  </s_sidebar_element>
+                  <s_sidebar_element>
+                    <!-- 최신 글 -->
+                    <div id="latest-posts">
+                      <ul>
+                        <s_rctps_rep>
+                          <li><a href="[##_rctps_rep_link_##]"><i class="fas fa-clock"></i>[##_rctps_rep_title_##]</a></li>
+                        </s_rctps_rep>
+                      </ul>
+                    </div>
+                  </s_sidebar_element>
+                  <s_sidebar_element>
+                    <!-- 최신 덧글 -->
+                    <div id="latest-comments">
+                      <ul>
+                        <s_rctrp_rep>
+                          <li><a href="[##_rctrp_rep_link_##]"><i class="fas fa-comment"></i>[##_rctrp_rep_desc_##]</a></li>
+                        </s_rctrp_rep>
+                      </ul>
+                    </div>
+                  </s_sidebar_element>
+                </s_sidebar>
+              </aside>
+            </div>
+            <div id="sidebar2" uk-modal>
+              <aside class="uk-modal-dialog" role="sidebar"><a class="uk-modal-close" href="#" uk-close></a>
+                <s_sidebar>
+                  <s_sidebar_element>
+                    <!-- 블로그 썸네일 -->
+                    <div class="thumbnail"><a href="[##_blog_link_##]"></a>
+                      <div class="blogger"><img class="profile" src="[##_image_##]">
+                        <div class="description">
+                          <div class="nickname">[##_blogger_##]</div>
+                          <div class="title">[##_title_##]</div>
+                        </div>
+                      </div>
+                    </div>
+                  </s_sidebar_element>
+                </s_sidebar>
+              </aside>
+            </div>
+          </nav>
+          <main id="main" role="main">
+            <s_cover_group>
+              <div id="cover">
+                <s_cover_rep>
+                  <s_cover name="ImageSlider">
+                    <div class="image-slider uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="autoplay: true;">
+                      <ul class="uk-slideshow-items">
+                        <s_cover_item>
+                          <s_cover_item_thumbnail>
+                            <li class="image-slider-post"><a href="[##_cover_item_url_##]"><img src="[##_cover_item_thumbnail_##]" uk-cover></a></li>
+                          </s_cover_item_thumbnail>
+                        </s_cover_item>
+                      </ul><a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a><a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+                    </div>
+                  </s_cover>
+                  <s_cover name="List">
+                    <div class="list">
+                      <s_cover_item>
+                        <s_cover_item_article_info>
+                          <div class="post list-post">
+                            <s_cover_item_thumbnail><img class="thumbnail" src="[##_cover_item_thumbnail_##]"></s_cover_item_thumbnail>
+                            <div class="category"><a href="[##_cover_item_category_url_##]">[##_cover_item_category_##]</a></div>
+                            <h1 class="title"><a href="[##_cover_item_url_##]">[##_cover_item_title_##]</a></h1>
+                            <p class="summary">[##_cover_item_summary_##]</p><time class="date">→<span>[##_cover_item_date_##]</span></time>
+                          </div>
+                        </s_cover_item_article_info>
+                      </s_cover_item>
+                    </div>
+                  </s_cover>
+                  <s_cover name="Masonry">
+                    <div class="masonry-layout">
+                      <s_cover_item>
+                        <div class="masonry-layout__panel">
+                          <s_cover_item_article_info>
+                            <div class="post masonry-post">
+                              <s_cover_item_thumbnail><img class="thumbnail" src="[##_cover_item_thumbnail_##]"></s_cover_item_thumbnail>
+                              <div class="category"><a href="[##_cover_item_category_url_##]">[##_cover_item_category_##]</a></div>
+                              <h1 class="title"><a href="[##_cover_item_url_##]">[##_cover_item_title_##]</a></h1>
+                              <p class="summary">[##_cover_item_summary_##]</p>
+                            </div>
+                          </s_cover_item_article_info>
+                        </div>
+                      </s_cover_item>
+                    </div>
+                  </s_cover>
+                </s_cover_rep>
+              </div>
+            </s_cover_group>
+            <div id="content">
+              <s_article_rep>
+                <s_index_article_rep>
+                  <div class="post index-post">
+                    <s_article_rep_thumbnail><img class="thumbnail" src="[##_article_rep_thumbnail_url_##]"></s_article_rep_thumbnail>
+                    <div class="category"><a href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a></div>
+                    <h1 class="title"><a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a></h1>
+                    <p class="summary">[##_article_rep_summary_##]</p><time class="date">→<span>[##_article_rep_date_##]</span></time>
+                  </div>
+                </s_index_article_rep>
+                <s_permalink_article_rep>
+                  <div id="post">
+                    <header id="header" role="header"><a class="category" href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a>
+                      <h1 class="title">[##_article_rep_title_##]</h1>
+                    </header>
+                    <div id="meta"><span class="date">[##_article_rep_date_##]</span>
+                      <s_ad_div><span class="update"><a href="[##_s_ad_m_link_##]">수정</a></span><span class="state"><a href="#" onclick="[##_s_ad_s2_onclick_##]">[##_s_ad_s1_label_##]</a></span><span class="delete"><a href="#" onclick="[##_s_ad_d_onclick_##]">삭제</a></span></s_ad_div>
+                    </div>
+                    <article class="content">[##_article_rep_desc_##]</article>
+                    <s_tag_label>
+                      <div id="tags">[##_tag_label_rep_##]</div>
+                    </s_tag_label>
+                  </div>
+                  <div id="comment">
+                    <s_rp>
+                      <div id="comment-form">
+                        <s_rp_input_form><textarea name="[##_rp_input_comment_##]"></textarea>
+                          <div id="comment-form-control"><input id="secret" type="checkbox" name="[##_rp_input_is_secret_##]"><label for="secret"></label><a href="#" onclick="[##_rp_onclick_submit_##]"></a></div>
+                        </s_rp_input_form>
+                      </div>
+                      <s_rp_container>
+                        <div class="uk-position-cover uk-position-fixed" id="comment-overlay"></div>
+                        <ul id="comment-list">
+                          <s_rp_rep>
+                            <li class="[##_rp_rep_class_##]" id="[##_rp_rep_id_##]">
+                              <div class="rp comment">
+                                <div class="profile"><img src="[##_rp_rep_logo_##]"></div>
+                                <div class="description">
+                                  <div class="action"><a class="address" href="[##_rp_rep_link_##]"><i class="far fa-bookmark"></i></a><a class="modify" href="#" onclick="[##_rp_rep_onclick_delete_##]"><i class="far fa-trash-alt"></i></a><a class="write" href="#" onclick="[##_rp_rep_onclick_reply_##]"><i class="far fa-comment"></i></a></div>
+                                  <p class="body">[##_rp_rep_desc_##]</p>
+                                  <div class="metainfo"><span class="name">[##_rp_rep_name_##]</span><span class="date">[##_rp_rep_date_##]</span></div>
+                                </div>
+                              </div>
+                              <ul class="re-comments">
+                                <s_rp2_rep>
+                                  <li class="[##_rp_rep_class_##]" id="[##_rp_rep_id_##]">
+                                    <div class="rp re-comment">
+                                      <div class="profile"><img src="[##_rp_rep_logo_##]"></div>
+                                      <div class="description">
+                                        <div class="action"><a class="address" href="[##_rp_rep_link_##]"><i class="far fa-bookmark"></i></a><a class="modify" href="#" onclick="[##_rp_rep_onclick_delete_##]"><i class="far fa-trash-alt"></i></a></div>
+                                        <p class="body">[##_rp_rep_desc_##]</p>
+                                        <div class="metainfo"><span class="name">[##_rp_rep_name_##]</span><span class="date">[##_rp_rep_date_##]</span></div>
+                                      </div>
+                                    </div>
+                                  </li>
+                                </s_rp2_rep>
+                              </ul>
+                            </li>
+                          </s_rp_rep>
+                        </ul>
+                      </s_rp_container>
+                    </s_rp>
+                  </div>
+                </s_permalink_article_rep>
+              </s_article_rep>
+              <s_paging>
+                <ul class="uk-pagination uk-flex-center" id="paging" uk-margin>
+                  <li><a class="[##_no_more_prev_##]" [##_prev_page_##]><span uk-pagination-previous></span></a></li>
+                  <s_paging_rep>
+                    <li><a [##_paging_rep_link_##]>[##_paging_rep_link_num_##]</a></li>
+                  </s_paging_rep>
+                  <li><a class="[##_no_more_next_##]" [##_next_page_##]><span uk-pagination-next></span></a></li>
+                </ul>
+              </s_paging>
+              <div id="app">
+                <scrollspy v-if="
+    '[##_body_id_##]' === 'tt-body-page'
+  "></scrollspy>
+              </div>
+            </div>
+          </main>
+          <footer id="footer" role="footer">
+            <div class="copyright"><small>스킨에 대한 저작권은 <a href="https://pronist.tistory.com" target="_blank">정상우</a>에게 있습니다.</small></div>
+          </footer>
+        </div>
+      </div>
+    </s_t3>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+    <script src="//kit.fontawesome.com/65f7e05682.js"></script>
+    <script src="//t1.daumcdn.net/tistory_admin/lib/jquery/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="./images/app.fe9552341cabe0f06492.js"></script>
+    <script type="text/javascript" src="./images/script.qJyNERobhr4TW3Wls1sN.js"></script>
+  </body>
+
+</html>
